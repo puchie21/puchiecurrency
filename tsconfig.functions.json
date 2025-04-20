@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "outDir": "netlify/functions-build",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["netlify/functions/**/*.ts", "server/**/*.ts"],
+  "exclude": ["node_modules", "client"]
+} 
